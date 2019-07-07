@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">	
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">		
+		<title>首页 - 好知网 </title>
+		<meta content="WxQUGTEhvPBy4ttWIgfvsMc8i9WQPpicFVplMhWVtPE" name="csrf-token" />
+		<meta content="0" name="is-login" />
+		<meta content="1" name="is-open" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/main.css" />	
+		<link rel="stylesheet" href="css/v2.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/modal.js" ></script>		
+	</head>
+	<body class="index">
+		<header class="header">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<a href="" class="navbar-brand">
+						<img src="img/logo.png" class="img-responsive" alt="好知，howzhi.com">
+					</a>
+					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+                    </button>
+				</div>
+				<nav class="collapse navbar-collapse pull-left">
+					<ul class="nav navbar-nav topmenu">
+						<li class="visible-xs">
+							<a href=""><i class="fa fa-search mrm"></i>搜索</a>
+						</li>
+						<li class="">
+							<a href="course.html">学习中心 </a>
+						</li>
+						<li class="nav-hover">
+							<a href="course.html">课程 </a>
+							
+						</li>
+						<li class="">
+							<a href="class.html">班级 </a>
+						</li>
+						<li class="">
+							<a href="course.html">小组 </a>
+						</li>
+					</ul>
+					<div class="new-tips hz-triangle hidden-xs">
+						<span class="t-primary">学习中心</span>
+						<div class="colse" id="hz-head-update" data-dismiss="alert">×</div>
+						<i class="left"></i>
+						<i class="right"></i>
+					</div>
+				</nav>
+				<div class="pull-right user-nav clearfix">
+					<ul class="nav nav-login">
+						<li>
+							<a class="color-gray-one" href="login.html">登录</a>
+						</li>
+						<li>
+							<a href="sign.html">注册</a>
+						</li>
+						<li class="hidden-xs hzapp hidden-sm">
+							<a href="app.html">
+								<small class="badge"> </small>
+								<i class="hz-icon ">&#xe616;</i> 好知APP
+							</a>
+						</li>
+					</ul>
+					<form class="navbar-form pull-right hz-search hidden-xs" role="search" action="/cloud/search">
+						<div class="form-group">
+							<div id="search-left" class="pull-left search-left">
+								<div class="search-type pull-left">
+									<div class="choose">课程</div>									
+								</div>
+								<input class="form-control js-search" name="q" placeholder="输入要查找的内容" autocomplete="off" />
+							</div>
+							<input name="type" value="course" type="hidden" />
+							<button class="button fa fa-search" type="submit"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+        <!--banner-->
+		<div id="myCarousel" class="carousel slide" data-ride = "carousel">
+			<!--data-ride="carousel" 属性用于标记轮播在页面加载时就开始动画播放，无需使用初始化的js函数-->
+			<!--通过 data 属性：使用 data 属性可以很容易控制轮播（Carousel）的位置。
+				属性 data-slide 接受关键字 prev 或 next，用来改变幻灯片相对于当前位置的位置。
+				使用 data-slide-to 来向轮播床底一个原始滑动索引，data-slide-to="2" 将把滑块移动到一个特定的索引，索引从 0 开始计数。-->
+			<!--轮播点点-->
+			<ol class="carousel-indicators">
+				<li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
+				<li data-target = "#myCarousel" data-slide-to = "1" class></li>
+				<li data-target = "#myCarousel" data-slide-to = "2" class></li>
+			</ol>			
+			<!--轮播图片-->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/block_picture_1557396082.jpg" />									
+				</div>
+				<div class="item item2">
+					<img src="img/block_picture_1470403193.jpg" />
+				</div>
+				<div class="item item3">
+					<img src="img/block_picture_1470403193.jpg" />
+				</div>
+			</div>						
+			<!--轮播左右键-->
+			<a class="left  carousel-control" href="#myCarousel" role="button" data-slide = "prev">
+				<span class="fa fa-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right  carousel-control" href="#myCarousel" role="button" data-slide = "next">
+				<span class="fa fa-chevron-right ka" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			
+		</div>	
+		<div class="live-open-course index-sec">
+			<div class="container">
+				<h2><strong>热门课程</strong></h2>
+				<div class="swiper-container" id="live-open-course">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide ">
+							<div class="col-xs-6 ">
+								<a href="">
+									<img src="img/0650251c36df775667.jpg" alt="sai基础教程">
+									<div class="show">
+										<div class="live-title">
+											<h3 class="text-center">sai基础教程</h3></div>
+										<p class="text-center clearfix">
+											<span>加入学员:46187人</span>
+										</p>
+									</div>
+									<div class="layer">
+										<p class="text-center">
+											<img class="avatar-sm" src="img/course.png">
+										</p>
+										<p class="text-center">
+											<strong>木桃</strong>
+										</p>
+										<p class="subheading"></p>
+										<div class="info">
+											<p>现在参加，<strong>46187</strong> 人已经加入课程</p>
+											<p class="avatar">
+												<img src="img/course.png" alt="路晨" />
+												<img src="img/course.png" alt="Sapphireblue" />
+												<img src="img/course.png" alt="流逝辽" />
+												<img src="img/course.png" alt="shinra1" />
+												<img src="img/course.png" alt="向阳处的九尾猫" />
+												<img src="img/course.png" alt="小小小白云" />
+												<span>…</span>
+											</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-6 double">
+								<a href="">
+									<img src="http://image.howzhi.com/default/2016/02-22/1854455749b1448400.jpg" alt="Lightroom基础教程">
+									<div class="show">
+										<div class="live-title">
+											<h3 class="text-center">Lightroom基础教程</h3></div>
+										<p class="text-center clearfix">
+											<span>加入学员:50783人</span>
+										</p>
+									</div>
+									<div class="layer">
+										<p class="text-center">
+											<img class="avatar-sm" src="img/avatar.png">
+										</p>
+										<p class="text-center">
+											<strong>小殷爱录像 </strong>
+										</p>
+										<p class="subheading"></p>
+										<div class="info">
+											<p>现在参加，<strong>50783</strong> 人已经加入课程</p>
+											<p class="avatar">
+												<img src="img/course.png" alt="Colin_Qian" />
+												<img src="img/course.png" alt="山白" />
+												<img src="img/course.png" alt="唐龍" />
+												<img src="img/course.png" alt="0217" />
+												<img src="img/course.png" alt="沙丁鱼rx3" />
+												<img src="img/course.png" alt="哈偶克" />
+												<span>…</span>
+											</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+                </div>
+				<p class="sec-more mtl mbs">
+					<a class="btn">更多 <i class="fa fa-angle-right"></i></a>
+				</p>
+			</div>
+		</div>
+		<div class="hzindex-course index-sec">
+			<div class="container">
+				<h2><strong>精品课程</strong></h2>
+				<nav id="course-recommed">
+					<ul class="clearfix">
+						<li data-id="4" class="btn  btn-primary ">精品推荐</li>
+						<li data-id="3" class="btn ">特价好课</li>
+						<li data-id="6" class="btn ">摄影课堂</li>
+						<li data-id="5" class="btn ">创意设计</li>
+						<li data-id="2" class="btn ">兴趣爱好</li>
+						<li data-id="1" class="btn ">声乐器乐</li>
+						<li data-id="7" class="btn ">运动健身</li>
+						<li data-id="8" class="btn ">IT互联网</li>
+					</ul>
+				</nav>
+				<div class="index-course-list course">
+					<div class="row clearfix act" id="course-commend4">			
+						<div class="col-sm-3 col-xs-6">
+							<div class="course-item speical">
+								<div class="course-img">
+									<a href="">
+										<img src="http://image.howzhi.com/course/2017/08-04/0927302b7757561827.jpg" alt="零基础，30分钟学会制作专业级H5" class="">			
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/2458649/card/show" data-user-id="2458649">
+											<img class="avatar-ss " src="" 　alt="Mugeda木疙瘩"> Mugeda木疙瘩
+										</a>			
+										<div class="price free pull-right"><span>免费</span></div>
+									</div>
+								</div>
+							</div>
+						</div>			
+						<div class="col-sm-3 col-xs-6 two">
+							<div class="course-item">
+								<div class="course-img">
+									<a href="">
+										<img src="img/1515462c8c11757151.jpg" alt="实用Excel—跟木头老师一起玩转Excel" class="" data-echo="http://image.howzhi.com/course/2017/03-19/1515462c8c11757151.jpg" />
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="">实用Excel—跟木头老师一起玩转Excel</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/1556824/card/show" data-user-id="1556824">
+											<img class="avatar-ss " src="http://image.howzhi.com/user/2019/05-22/112326e87ae0764940.jpg" 　alt="RedWOod"> RedWOod
+										</a>
+			
+										<div class="price pull-right"><span>￥56.00</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="course-item">
+								<div class="course-img">
+									<a href="">
+										<img src="img/10541358a263386032.png" alt="YouCore系统思维应用：用框架解决问题（初级）" class="" data-echo="http://image.howzhi.com/course/2017/11-03/10541358a263386032.png" />
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="">YouCore系统思维应用：用框架解决问题（初级）</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/2479888/card/show" data-user-id="2479888">
+											<img class="avatar-ss " src="http://image.howzhi.com/user/2017/10-12/11425940003e210298.jpg" 　alt="YouCore2017"> YouCore2017
+										</a>
+			
+										<div class="price pull-right"><span>￥99.00</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12 ">
+							<div class="course-item">
+								<div class="course-img">
+									<a href="">
+										<img src="img/144951f6e4bc952184.jpg" alt="信用卡入坑必读" class="" data-echo="http://image.howzhi.com/course/2019/03-11/144951f6e4bc952184.jpg" />
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="">信用卡入坑必读</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/2461960/card/show" data-user-id="2461960">
+											<img class="avatar-ss " src="" 　alt="比卡网"> 比卡网
+										</a>
+			
+										<div class="price free pull-right"><span>免费</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="course-item">
+								<div class="course-img">
+									<a href="">
+										<img src="img/142355b67574545742.jpg" alt="从零开始玩转热靴闪光灯，实战演练课程" class="" data-echo="http://image.howzhi.com/course/2018/11-05/142355b67574545742.jpg" />
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="">从零开始玩转热靴闪光灯，实战演练课程</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/2572026/card/show" data-user-id="2572026">
+											<img class="avatar-ss " src="http://image.howzhi.com/user/2018/11-05/140130ab8872825703.jpg" 　alt="摄影读书会"> 摄影读书会
+										</a>		
+										<div class="price pull-right"><span>￥99.00</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12 ">
+							<div class="course-item">
+								<div class="course-img">
+									<a href="">
+										<img src="img/132351716488421411.jpg" alt="运营微课：如何提升邮件营销转化率" class="" data-echo="http://image.howzhi.com/course/2018/05-04/202457993d36317308.png" />
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="">运营微课：如何提升邮件营销转化率</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/1365453/card/show" data-user-id="1365453">
+											<img class="avatar-ss " src="http://image.howzhi.com/avatar/2013/09-18/163544071941636147.jpg" 　alt="EduSoho"> EduSoho
+										</a>
+										<span class="dapinpai-icon-t" title="达品牌"></span>			
+										<div class="price free pull-right"><span>免费</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="course-item">
+								<div class="course-img">
+									<a href="/course/15614/">
+										<img src="img/202457993d36317308.png" alt="零基础学习UI设计--ps基础阶段" class="" data-echo="http://image.howzhi.com/course/2017/03-19/132351716488421411.jpg" />
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="/course/15614/">零基础学习UI设计--ps基础阶段</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a class=" js-user-card" href="" data-card-url="/user/2418478/card/show" data-user-id="2418478">
+											<img class="avatar-ss " src="http://image.howzhi.com/user/2017/03-12/140151fec83b711204.jpg" 　alt="i渣渣西的老大"> i渣渣西的老大
+										</a>			
+										<div class="price free pull-right"><span>免费</span></div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<p class="sec-more">
+					<a class="btn">更多 <i class="fa fa-angle-right"></i></a>
+				</p>
+			</div>
+        </div>
+		<div class="hzindex-classroom index-sec">
+			<div class="container">
+				<h2><strong>班级推荐</strong></h2>
+				<ul class="classroom-list row">
+					<li class="col-md-3 col-xs-6">
+						<div class="pic">
+							<a href="">
+								<img src="img/1151026a9542216720.jpg" alt="零基础摄影入门班" class="" data-echo="http://image.howzhi.com/default/2016/02-18/1151026a9542216720.jpg" />
+								<div class="layer">
+									<ul>
+										<li><i class="hz-icon">&#xe663;</i><span>260</span> 人已加入学习</li>
+										<li><i class="hz-icon">&#xe632;</i><span>32</span> 课时</li>
+										<li><i class="hz-icon">&#xe6c3;</i><span>6</span> 次作业 </li>
+										<li><i class="hz-icon">&#xe615;</i><span>24</span> 小时答疑</li>
+									</ul>
+								</div>
+								<div class="classroom-tag hz-triangle"><span>班级</span></div>
+							</a>
+						</div>
+						<div class="info">
+							<h3> 零基础摄影入门班</h3>
+							<p>
+								好知摄影入门班，最有趣的单反摄影入门教程！零基础学习摄影入门技巧，专业摄影师为你...
+							</p>
+							<a class="btn btn-primary" href="">立即加入</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="pic">
+							<a href="">
+								<img src="img/10434959afa2686578.jpg" alt="极致风光摄影进阶提高班" class="" data-echo="http://image.howzhi.com/default/2016/03-18/113139b0d161061610.jpg" />
+								<div class="layer">
+									<ul>
+										<li><i class="hz-icon">&#xe663;</i><span>24</span> 人已加入学习</li>
+										<li><i class="hz-icon">&#xe632;</i><span>44</span> 课时</li>
+										<li><i class="hz-icon">&#xe6c3;</i><span>7</span> 次作业 </li>
+										<li><i class="hz-icon">&#xe615;</i><span>24</span> 小时答疑</li>
+									</ul>
+								</div>
+								<div class="classroom-tag hz-triangle"><span>班级</span></div>
+							</a>
+						</div>
+						<div class="info">
+							<h3>极致风光摄影进阶提高班</h3>
+							<p>
+								华盖 500PX签约摄影师独家风光后期秘诀。从入门到提高，系统地学习前期拍摄技术...
+							</p>
+							<a class="btn btn-primary" href="">立即加入</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="pic">
+							<a href="">
+								<img src="img/113139b0d161061610.jpg" alt="Adobe Lightroom cc后期基础入门班 " class="" data-echo="http://image.howzhi.com/default/2015/11-30/10434959afa2686578.jpg" />
+								<div class="layer">
+									<ul>
+										<li><i class="hz-icon">&#xe663;</i><span>90</span> 人已加入学习</li>
+										<li><i class="hz-icon">&#xe632;</i><span>59</span> 课时</li>
+										<li><i class="hz-icon">&#xe6c3;</i><span>5</span> 次作业 </li>
+										<li><i class="hz-icon">&#xe615;</i><span>24</span> 小时答疑</li>
+									</ul>
+								</div>
+								<div class="classroom-tag hz-triangle"><span>班级</span></div>
+							</a>
+						</div>
+						<div class="info">
+							<h3>Adobe Lightroom cc后期基础入门班  </h3>
+							<p>
+								每天10min 轻松入门
+							</p>
+							<a class="btn btn-primary" href="">立即加入</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="pic">
+							<a href="">
+								<img src="img/144103f87e49421080.jpg" alt="牛牛人像摄影班" class="" data-echo="http://image.howzhi.com/default/2016/04-08/144103f87e49421080.jpg" />
+								<div class="layer">
+									<ul>
+										<li><i class="hz-icon">&#xe663;</i><span>57</span> 人已加入学习</li>
+										<li><i class="hz-icon">&#xe632;</i><span>30</span> 课时</li>
+										<li><i class="hz-icon">&#xe6c3;</i><span>0</span> 次作业 </li>
+										<li><i class="hz-icon">&#xe615;</i><span>24</span> 小时答疑</li>
+									</ul>
+								</div>
+								<div class="classroom-tag hz-triangle"><span>班级</span></div>
+							</a>
+						</div>
+						<div class="info">
+							<h3> 牛牛人像摄影班</h3>
+							<p>
+								人像摄影可以是怎样的？它可以是日系清新人像：清淡的色调，简单的画面，不经意间的构...
+							</p>
+							<a class="btn btn-primary" href="">立即加入</a>
+						</div>
+					</li>
+				</ul>
+				<div class="dynamic">
+					<h4 class="hz-line-left">班级动态</h4>
+					<div id="dynamic-swiper" class="swiper-container">
+						<div class="swiper-wrapper row clearfix">
+							<div class="swiper-slide">
+
+								<div class="col-md-6">
+									<a href="">
+										<img class="avatar-ss" src="http://image.howzhi.com/user/2019/05-20/114354a6c5c3831587.png" alt="燕子t3e">
+									</a>
+									<p>
+										<a href=""> 燕子t3e</a> 加入了
+										<a class="active" href="/classroom/17">牛牛人像摄影班</a>
+									</p>
+									<span class="time">14分钟前</span>
+								</div>
+
+								<div class="col-md-6">
+									<a href="">
+										<img class="avatar-ss" src="http://image.howzhi.com/default/2019/06-08/00063282687b743333.jpg" alt="vyfukybjk哈哈">
+									</a>
+									<p>
+										<a href=""> vyfukybjk哈哈</a> 加入了
+										<a class="active" href="/classroom/10">极致风光摄影进阶提高班</a>
+									</p>
+									<span class="time">4天前</span>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+
+								<div class="col-md-6">
+									<a href="">
+										<img class="avatar-ss" src="http://image.howzhi.com/default/2019/06-05/1939208b68aa334872.jpg" alt="梅花香自苦寒">
+									</a>
+									<p>
+										<a href=""> 梅花香自苦寒</a> 加入了
+										<a class="active" href="/classroom/16">零基础摄影入门班</a>
+									</p>
+									<span class="time">5天前</span>
+								</div>
+
+								<div class="col-md-6">
+									<a href="">
+										<img class="avatar-ss" src="http://image.howzhi.com/user/2019/05-21/1713597a20e6601791.png" alt="三个字">
+									</a>
+									<p>
+										<a href=""> 三个字</a> 加入了
+										<a class="active" href="/classroom/17">牛牛人像摄影班</a>
+									</p>
+									<span class="time">5天前</span>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+
+								<div class="col-md-6">
+									<a href="">
+										<img class="avatar-ss" src="http://image.howzhi.com/user/2019/05-21/1713597a20e6601791.png" alt="三个字">
+									</a>
+									<p>
+										<a href=""> 三个字</a> 加入了
+										<a class="active" href="/classroom/16">零基础摄影入门班</a>
+									</p>
+									<span class="time">5天前</span>
+								</div>
+
+								<div class="col-md-6">
+									<a href="/u/2612845/">
+										<img class="avatar-ss" src="http://image.howzhi.com/user/2019/05-21/1713597a20e6601791.png" alt="潘严">
+									</a>
+									<p>
+										<a href=""> 三个字</a> 加入了
+										<a class="active" href="/classroom/17">牛牛人像摄影班</a>
+									</p>
+									<span class="time">7天前</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<p class="sec-more">
+					<a class="btn" href="">更多 <i class="fa fa-angle-right"></i></a>
+				</p>
+			</div>
+		</div>
+		<div class="hz-thread index-sec">
+			<div class="container">
+				<h2><strong>话题精选</strong></h2>
+				<div id="thread-carousel" class="carousel slide">
+					<div class="carousel-inner" role="listbox">
+						<ul class="item active clearfix">
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1521085976.jpg" alt="【招聘】售前客服（2名）" />
+									<div class="bottom">
+										<h3>【招聘】售前客服（2名）</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i> 知了</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2018-03-15</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1483955463.jpg" alt="韩剧《鬼怪》男一二都在狠狠健身 裸裸的圈粉啊" />
+									<div class="bottom">
+										<h3>韩剧《鬼怪》男一二都在狠狠健身 裸裸的圈粉啊</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i> 健身小飞侠</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2017-01-09</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1473303419.jpg" alt="Bruno Aveillan的虚幻光影" />
+									<div class="bottom">
+										<h3>Bruno Aveillan的虚幻光影 </h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i>猪脚好咸</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-09-06</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1473300683.jpg" alt="iPhone 7来了，要不要买买买？" />
+									<div class="bottom">
+										<h3>iPhone 7来了，要不要买买买？</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i>乱流</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-09-08</span>
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1472785605.jpg" alt="20分钟=跑步一小时？什么运动这么牛！" />
+									<div class="bottom">
+										<h3>20分钟=跑步一小时？什么运动这么牛！</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i>三尺青锋</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-09-02</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1470382807.jpg" alt="如何品鉴单品咖啡" />
+									<div class="bottom">
+										<h3>如何品鉴单品咖啡</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i> 卷卷 </span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-08-05</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1496885430.jpg" alt="【招募】这个每年走数百里山路助学的公益人需要你的帮助" />
+									<div class="bottom">
+										<h3>【招募】这个每年走数百里山路助学的公益人需要你的帮助</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i>乱流</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2017-06-08</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1463035061.jpg" alt="一个自由摄影师的五年创业之路：从苦逼到牛逼——专访牛牛很忙" />
+									<div class="bottom">
+										<h3>一个自由摄影师的五年创业之路：从苦逼到牛逼——专访牛牛很忙</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i>曹佳佳的熊猫眼</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-05-12</span>
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1462331991.jpg" alt="看薇薇安·麦尔是如何观察这个世界的" />
+									<div class="bottom">
+										<h3>看薇薇安·麦尔是如何观察这个世界的</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class=" hz-icon mrs">&#xe663;</i>  猪脚好咸</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-05-04</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1461318544.jpg" alt="【作品欣赏】青山裕企的那些少女们" />
+									<div class="bottom">
+										<h3>【作品欣赏】青山裕企的那些少女们</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class="hz-icon mrs">&#xe663;</i>猪脚好咸</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2016-04-22</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1457857515.jpg" alt="Llightroom预设资源分享（第一期）" />
+									<div class="bottom">
+										<h3>Llightroom预设资源分享（第一期）</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class=" hz-icon mrs">&#xe663;</i>乱流</span>
+											<span class="text-right"><i class="hz-icon mrs">&#xe60c;</i>2015-03-13</span>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="col-sm-6 col-md-3 col-xs-6">
+								<a href="" target="_blank">
+									<img src="http://f1.howzhi.com/system/block_picture_1483955463.jpg" alt="韩剧《鬼怪》男一二都在狠狠健身 裸裸的圈粉啊" />
+									<div class="bottom">
+										<h3>韩剧《鬼怪》男一二都在狠狠健身 裸裸的圈粉啊</h3>
+										<p class="clearfix hidden-xs">
+											<span class="text-o-show"><i class=" hz-icon mrs">&#xe663;</i>健身小飞侠</span>
+											<span class="text-right"><i class=" hz-icon mrs">&#xe60c;
+											</i>2017-01-09</span>
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a class="carousel-control left" href="#thread-carousel" data-slide="prev" date-interval="false" date-wrap="false">&lsaquo;</a>
+					<a class="carousel-control right" href="#thread-carousel" data-slide="next" date-interval="false" date-wrap="false">&rsaquo;</a>
+				</div>
+				<p class="sec-more">
+					<a class="btn" href="">更多 <i class="fa fa-angle-right"></i></a>
+				</p>
+			</div>
+		</div>
+		<div class="hz-hottag index-sec">
+			<div class="container">
+				<h2><strong>热门标签</strong></h2>
+				<div class="hottag-list clearfix">
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag1.jpg" alt="Lightroom">
+							</p>
+							<p>Lightroom<br/><span>12门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag2.jpg" alt="Photoshop">
+							</p>
+							<p>Photoshop<br/><span>100门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag3.jpg" alt="After Effect">
+							</p>
+							<p>After Effect<br/><span>15门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag4.jpg" alt="吉他">
+							</p>
+							<p>吉他<br/><span>72门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag5.jpg" alt="人像摄影">
+							</p>
+							<p>人像摄影<br/><span>52门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag6.jpg" alt="产品摄影">
+							</p>
+							<p>产品摄影<br/><span>30门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag7.jpg" alt="摄影布光">
+							</p>
+							<p>摄影布光<br/><span>26门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag8.jpg" alt="3d制作">
+							</p>
+							<p>3d制作<br/><span>64门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag9.jpg" alt="风光摄影">
+							</p>
+							<p>风光摄影<br/><span>41门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag10.jpg" alt="办公软件">
+							</p>
+							<p>办公软件<br/><span>31门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag11.jpg" alt="手工制作">
+							</p>
+							<p>手工制作<br/><span>32门课程</span></p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-4">
+						<a href="">
+							<p>
+								<img src="img/tag12.jpg" alt="音频制作">
+							</p>
+							<p>音频制作<br/><span>12门课程</span></p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hz-daren index-sec ">
+			<div class="container">
+				<h2><strong>认证达人</strong></h2>
+				<div id="daren-carousel" class="carousel slide">
+					<div class="carousel-inner" role="listbox">
+						<div class="item daren-list active clearfix">
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/2307219/card/show" data-user-id="2307219">
+											<img src="http://image.howzhi.com/user/2016/07-08/1027517b63e0030030.png" alt="星火英语">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">星火英语</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>英语培训</span></p>
+										<p class="text-o-show">知名英语教育机构</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/2345908/card/show" data-user-id="2345908">
+											<img src="http://image.howzhi.com/user/2016/07-19/105741522d63251308.png" alt="魔视教育">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">魔视教育</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>影视特效培训</span></p>
+										<p class="text-o-show">在线影视特效培训服务机构</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/1952297/card/show" data-user-id="1952297">
+											<img src="http://image.howzhi.com/default/2016/01-29/1041437271c7312764.jpg" alt="吕小川">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">吕小川</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>人像摄影师</span></p>
+										<p class="text-o-show">著名创作型摄影师，研习油画多年，其摄影作...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item daren-list clearfix">
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/1882233/card/show" data-user-id="1882233">
+											<img src="http://image.howzhi.com/default/2015/10-09/101557dab659509843.jpg" alt="双向摄影学院">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">双向摄影学院</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>摄影培训机构</span></p>
+										<p class="text-o-show">双向摄影学院，创始人闭眼缄默为华盖及50...</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/1314678/card/show" data-user-id="1314678">
+											<img src="" alt="一个小九">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">一个小九</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>摄影师</span></p>
+										<p class="text-o-show">九度阳光摄影工作室的小九，制作和分享了一...</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/1350071/card/show" data-user-id="1350071">
+											<img src="http://image.howzhi.com/avatar/2013/08-28/131500461328712756.jpg" alt="凝创摄影艺术中心">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">凝创摄影艺术中心</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>摄影培训机构</span></p>
+										<p class="text-o-show">北京凝创摄影设计艺术中心</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item daren-list clearfix">
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/1259977/card/show" data-user-id="1259977">
+											<img src="http://image.howzhi.com/default/2016/04-13/154444ca7768014596.jpg" alt="亮剑">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">亮剑</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>摄影师</span></p>
+										<p class="text-o-show">产品摄影师，分享了多个产品摄影教程。</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/1809358/card/show" data-user-id="1809358">
+											<img src="http://image.howzhi.com/avatar/2015/06-10/140953137501327372.jpg" alt="钟百迪">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">钟百迪</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>摄影师</span></p>
+										<p class="text-o-show">橄榄图摄影课堂负责人，摄影导师，从事摄影...</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="list-item clearfix">
+									<div class="avatar">
+										<a class="js-user-card" href="" data-card-url="/user/187/card/show" data-user-id="187">
+											<img src="http://image.howzhi.com/default/2015/07-14/145733d2af26635228.jpg" alt="乱流">
+										</a>
+									</div>
+									<div class="main">
+										<p class="text-o-show">
+											<a class="active" href="">乱流</a>
+										</p>
+										<p class="icon"><span><i class="hz-icon icon-i"></i>摄影达人</span></p>
+										<p class="text-o-show">摄影达人，分享了众多摄影教程。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left" href="#daren-carousel" data-slide="prev" date-interval="false" date-wrap="false">&lsaquo;</a>
+					<a class="carousel-control right" href="#daren-carousel" data-slide="next" date-interval="false" date-wrap="false">&rsaquo;</a>
+				</div>
+				<p class="sec-more">
+					<a class="btn" href="">申请入驻 <i class="fa fa-angle-right"></i></a>
+					<a class="btn mlm" href="">查看更多 <i class="fa fa-angle-right"></i></a>
+				</p>
+			</div>
+		</div>
+				<section class="hz-index-bottom">
+					<div class="container text-center">
+						<ul class="row">
+							<li class="col-xs-4 li1">
+								<a href="">
+									<div class="pic"><img src="img/bottom-item1.png" alt="发现数千门课程"></div>
+									<p>发现数千门课程</p>
+								</a>
+							</li>
+							<li class="col-xs-4 li2">
+								<a href="">
+									<div class="pic"><img src="img/bottom-item2.png " alt="专业学习计划指引"></div>
+									<p>专业学习计划指引</p>
+								</a>
+							</li>
+							<li class="col-xs-4 li3">
+								<a href="">
+									<div class="pic"><img src="img/bottom-item3.png" alt="与同学一起讨论"></div>
+									<p>与同学一起讨论</p>
+								</a>
+							</li>
+						</ul>
+						<div class="more">
+							<a href="">
+								更有趣有效的学习 <i class=" hz-icon">&#xe60d;</i>
+							</a>
+						</div>
+					</div>
+				</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 ">
+					<a href=""><img src="img/logo.png" alt="好知，知识分享新社区"></a>
+				</div>
+				<div class="col-md-4 about">
+					<span><a href="">关于我们</a></span>|
+					<span><a href="" target="_blank">加入我们</a></span>|
+					<span><a href="" target="_blank">合作申请</a></span>|
+					<span><a href="">意见反馈</a></span>|
+					<span><a href="">用户协议</a></span><br/>
+					<a class="text-sm con prm" href="" target="_blank">浙ICP备13006852号-3</a>
+					<a class="text-sm con plm" href="" target="_blank">浙B2-20160872</a>
+				</div>
+				<div class="row">
+					<div style="width:300px;margin:0 auto; padding:20px 0;">
+						<a target="_blank" href="" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="img/filing.png" style="float:left;" />
+							<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010802003863号</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-4">关注我们：
+					<a href=""><i class="hz-icon icon-weibo iconfont"></i></a>
+					<a class="icon-sns"><i class="hz-icon ">&#xe715;</i>
+						<div class="sns-popover" style='background:url("/assets/img/howzhi/weichat.png?7.5.15.1")'></div>
+					</a>
+					<a href=""><i class="hz-icon icon-qq"></i></a>
+					<a href=""><i class="hz-icon">&#xe691;</i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<div class="friendlinks">
+			<div class="container">
+				<div class="content">
+					<font>友情链接:</font>
+					<a href='' target="_blank" class="white">EduSoho开源网络课堂</a>
+					<span>|</span>
+					<a href='' target="_blank" class="white">气球鱼学院</a>
+					<span>|</span>
+					<a href='' target="_blank" class="white">360安全网址导航</a>
+					<span>|</span>
+					<a href='https://www.hao123.com/' target="_blank" class="white">hao123</a>
+					<span>|</span>
+					<a href='http://www.lvse.com/' target="_blank" class="white">绿色网</a>
+					<span>|</span>
+					<a href='' target="_blank" class="white">站长之家</a>
+					<span>|</span>
+					<a href=''>新客网</a>
+					<span>|</span>
+					<a href='' target="_blank" class="white">暖石网</a>
+					<span>|</span>
+					<a href=''>麦子学院</a>
+					<span>|</span>
+					<a href='' target="_blank" class="white">博为峰网校</a>
+					<br/>
+				</div>
+				Powered by
+				<a href="" target="_blank">EduSoho v7.5.15</a>
+				©2014-2019
+				<a class="mlm" href="" target="_blank">好知网</a>
+			</div>
+		</div>
+		
+		<section>
+			on class="serch-enginne-course visible-lg" 　role="alert">
+		</section>
+		<div id="login-modal" class="modal " data-url="/login/ajax"></div>
+		<div id="modal" class="modal" tabindex='-1'></div>
+		<div id="upload-image-modal" class="modal" tabindex="-1" aria-hidden="true" style="display: none;"></div>
+		<ul class="fixed-bar">
+			<li class="hz-app">
+				<a class="active btn btn-primary" target="_blank" href="">
+					APP
+				</a>
+			</li>
+			<li class="hz-weixin">
+				<a class="fixed-bar-icon" href="javascript:;">
+					<i class="hz-icon icon-erweima "></i>
+				</a>
+				<div class="weixin">
+					<p class="text-center mvs t-primary hidden-xs hidden-sm">扫一扫 关注好知微信</p>
+					<img src="img/wenxin-qrcode.jpg" class="img-responsive" alt="好知网微信" />
+				</div>
+			</li>
+			<li class="hz-feedback">
+				<a class="fixed-bar-icon" class="js-feedback" href="/feedback/user/list">
+					<i class="hz-icon ">&#xe64e;</i>
+				</a>
+				<a href="/feedback/user/list" target="_blank" class="js-feedback fixed-bar-text">
+					问题反馈
+				</a>
+			</li>
+			<li class="go-top">
+				<a class="fixed-bar-icon" href="javascript:;">
+					<i class="hz-icon icon-keyboardarrowup"></i>
+				</a>
+				
+			</li>
+		</ul>
+	</body>
+</html>
